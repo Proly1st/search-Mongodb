@@ -1,0 +1,37 @@
+.search-container{
+    position: relative;
+}
+
+
+.search-recommend{
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 4px);
+    background-color: #fff;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #666;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.search-item:hover{
+    background-color: #fafafa;
+}
+
+.input-search:focus ~ .search-recommend{
+    display: block;
+}
+
+.search-item{
+    height: 36px;
+    padding: 0 12px;
+    margin: 0;
+    line-height: 36px;
+}
+.search-item a{
+    color: #0e0e0e;
+}
